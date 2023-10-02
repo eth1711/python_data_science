@@ -2,11 +2,12 @@ import sys
 
 arg = sys.argv
 
-if len(arg) != 2:
-    print("AssertionError : more than one argument is provided ")
-elif type(arg[1]) != int:
-    print("AssertionError : argument is not an integer")
-elif arg[1] % 2 == 0:
+assert len(arg) <= 2, "more than one argument is provided"
+
+assert arg[1].isnumeric(), "argument is not an interger"
+
+num = int(arg[1])
+if num % 2 == 0:
     print("I'm Even.")
-elif arg[1] % 2 != 0:
+else:
     print("I'm Odd.")
