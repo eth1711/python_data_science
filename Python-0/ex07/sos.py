@@ -15,6 +15,11 @@ def main():
              'Z': '--..', '1': '.----', '2': '..---', '3': '...--',
              '4': '....-', '5': '.....', '6': '-....', '7': '--...',
              '8': '---..', '9': '----.', '0': '-----'}   
-    morse_list = [morse[char.upper()] for char in text[1] if char.upper() in morse]
-    morse_string = " ".join(morse_list)
+    morse_list = \
+        [morse[char.upper()] for char in text[1] if char.upper() in morse]
+    morse_string = "".join(morse_list)
     print(morse_string)
+
+
+if __name__ == "__main__":
+    main()
