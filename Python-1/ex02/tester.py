@@ -1,5 +1,3 @@
-import numpy as np
+from load_image import ft_load
 
-arr = np.array([[3, 2, 4], [5, 0, 1]])
-
-print(np.sort(arr))
+print(ft_load("landscape.jpg"))
